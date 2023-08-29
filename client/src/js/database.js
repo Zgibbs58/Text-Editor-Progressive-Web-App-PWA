@@ -1,4 +1,5 @@
 import { openDB } from "idb";
+import { header } from "./header";
 
 const initdb = async () =>
   openDB("jateDB", 1, {
@@ -17,7 +18,7 @@ export const putDb = async (content) => {
   const jateDB = await openDB("jateDB", 1);
   const tx = jateDB.transaction("jate", "readwrite");
   const store = tx.objectStore("jate");
-  const request = store.put({ value: content });
+  const request = store.put({ value: header + content });
   const result = await request;
   // console.error("putDb not implemented");
   return result;
