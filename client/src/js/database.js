@@ -30,7 +30,8 @@ export const getDb = async () => {
   const tx = jateDB.transaction("jate", "readonly");
   const store = tx.objectStore("jate");
   const request = store.getAll();
-  const result = await request;
+  // added array destructuring because result was coming back and array and couldn't be split by codemirror
+  const [result] = await request;
   // console.error("getDb not implemented");
   return result;
 };
