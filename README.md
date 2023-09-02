@@ -2,6 +2,8 @@
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+[Deployed Link](https://tranquil-stream-56712-b9712153b3bf.herokuapp.com/)
+
 ## Description
 This is a text editor that is setup with themes that color code text recognized as syntax. It is a single page application that meets PWA criteria and can be downloaded to function like a native app. Using a combination of multiple packages including: webpack, babel, codemirror, idb, and more to store data in the browser and allow the app to work offline. 
 
